@@ -1,4 +1,4 @@
-// Script: smelt_windowscreenglass.sql
+// Script: smelt_windowscreenglass.sqf
 // Author: piggd
 // Revision: 2.0
 // Date: 04232013
