@@ -1,4 +1,4 @@
-// Script: smelt_fueltank.sql
+// Script: smelt_fueltank.sqf
 // Author: piggd
 // Revision: 2.0
 // Date: 04232013
