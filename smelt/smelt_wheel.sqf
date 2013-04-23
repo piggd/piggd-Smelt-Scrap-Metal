@@ -1,4 +1,4 @@
-// Script: smelt_wheel.sql
+// Script: smelt_wheel.sqf
 // Author: piggd
 // Revision: 2.0
 // Date: 04232013
