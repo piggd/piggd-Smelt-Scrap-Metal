@@ -1,4 +1,4 @@
-// Script: smelt_scrapmetal.sql
+// Script: smelt_scrapmetal.sqf
 // Author: piggd
 // Revision: 2.0
 // Date: 04222013
