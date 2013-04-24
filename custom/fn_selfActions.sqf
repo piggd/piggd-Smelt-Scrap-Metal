@@ -1,6 +1,6 @@
 scriptName "Functions\misc\fn_selfActions.sqf";
 /***********************************************************
-  ADD ACTIONS FOR SELF
+	ADD ACTIONS FOR SELF
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
@@ -160,7 +160,7 @@ if (!isNull cursorTarget and !_inVehicle and (player distance cursorTarget < 4))
 			s_player_smelt_scrapmetal = player addAction[("<t color=""	#FF9999"">" + ("Smelt Scrap Metal") +"</t>"),"smelt\smelt_scrapmetal.sqf",cursorTarget, 3 ,true, true,"", ""];
 		};
 	} else {
-		player removeAction s_player_smelt;
+		player removeAction s_player_smelt_scrapmetal;
 		s_player_smelt_scrapmetal = -1;
 	};
 	// Smelt Engine Parts
