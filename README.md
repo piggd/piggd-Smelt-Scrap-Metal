@@ -1,10 +1,10 @@
-*********************************************
-* Mod Name:  pigg Smelt Scrap Metal ver 2.0 *
-* Author: piggd								*
-* Email: dayzpiggd@gmail.com				*
-* Version: 2.0								*
-* Date:	04/22/2013							*
-*********************************************
+*****************************************
+* Mod Name:  piggd Smel Scrap Metal     *
+* Author: piggd							*
+* Email: dayzpiggd@gmail.com			*
+* Version: 2.0							*
+* Date:	04/22/2013						*
+*****************************************
 
 Information:
 This mod will allow you to smelt tin and soda cans into scarp metal.  It requires fileed canteen of water (boiled or unboiled), # (6 by default) of cans, tool box and a fire. 
@@ -96,7 +96,7 @@ ADD immediately after
 			s_player_smelt_scrapmetal = player addAction[("<t color=""	#FF9999"">" + ("Smelt Scrap Metal") +"</t>"),"smelt\smelt_scrapmetal.sqf",cursorTarget, 3 ,true, true,"", ""];
 		};
 	} else {
-		player removeAction s_player_smelt;
+		player removeAction s_player_smelt_scrapmetal;
 		s_player_smelt_scrapmetal = -1;
 	};
 	// Smelt Engine Parts
@@ -156,3 +156,4 @@ ADD immediately after
 
 // ------------------------------------------------------------------------Piggd Smelt Scrap Metal ver 2.0 End------------------------------------------------------------------------
 
+Repack your PBO and upload it to the sever.
