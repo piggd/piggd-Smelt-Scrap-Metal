@@ -5,7 +5,7 @@
 //  Smelting is based on the boil code in standard dayz.  Modified by piggd to smelt one item into another.
 
 
-private["_hasboiledbottleitem","_hasbottleitem","_itemsremoved","_hasitems","_bottletext","_item1text","_parttext","_itemtext","_reqitemqty","_item1qty","_itemsreq","_dis","_sfx"];
+private["_hasboiledbottleitem","_hasbottleitem","_itemsremoved","_hasitems","_bottletext","_item1text","_parttext","_itemtext","_item1qty","_itemsreq","_dis","_sfx"];
 player removeAction s_player_smelt_fueltank;
 s_player_smelt_fueltank = -1;
 
@@ -18,7 +18,7 @@ _item1qty = {_x == "PartGeneric"} count magazines player;
 _itemsreq = 2;
 _itemsremoved = 0;
 if ( _hasboiledbottleitem ) then {
-  	_hasbottleitem = true;
+		_hasbottleitem = true;
 };
  if (_item1qty >= _itemsreq) then {
     _hasitems = true;
@@ -26,7 +26,7 @@ if ( _hasboiledbottleitem ) then {
 
 _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterbottle" >> "displayName");
 _item1text = getText (configFile >> "CfgMagazines" >> "PartGeneric" >> "displayName");
-_itemtext = format["%1 of %2 %3 required",_reqitemqty,_itemsreq,_item1text];
+_itemtext = format["%1 of %2 %3 required",_item1qty,_itemsreq,_item1text];
 _parttext = getText (configFile >> "CfgMagazines" >> "PartFueltank" >> "displayName");
 if (!_hasbottleitem) exitWith {cutText [format[(localize "str_player_31"),_bottletext,"smelt"] , "PLAIN DOWN"]};
 if (!_hasitems) exitWith {cutText [format[(localize "str_player_31"),_itemtext,"smelt"] , "PLAIN DOWN"]};
