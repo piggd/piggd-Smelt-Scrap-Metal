@@ -19,7 +19,7 @@ _metalqty = _sodaemptyqty +_tincanqty;
 _cansreq = 6;
 _cansremoved = 0;
 if ( _hasboiledbottleitem ) then {
-  	_hasbottleitem = true;
+		_hasbottleitem = true;
 };
  if (_metalqty >= _cansreq) then {
     _hastinitem = true;
