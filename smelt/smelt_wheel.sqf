@@ -8,7 +8,6 @@ private["_hasboiledbottleitem","_hasbottleitem","_itemsremoved","_hasitems","_ha
 player removeAction s_player_smelt_wheel;
 s_player_smelt_wheel = -1;
 
-
 _hasbottleitem = "ItemWaterbottle" in magazines player;
 _hasboiledbottleitem = "ItemWaterbottleBoiled" in magazines player;
 _hasitems = false;
@@ -21,7 +20,7 @@ _itemsreq = 1;
 _items2req = 3;
 _itemsremoved = 0;
 if ( _hasboiledbottleitem ) then {
-  	_hasbottleitem = true;
+		_hasbottleitem = true;
 };
  if (_item1qty >= _itemsreq) then {
     _hasitems = true;
